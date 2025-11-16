@@ -15,11 +15,11 @@ jobs:
         run: pip install platformio
 
       - name: Build firmware
-        run: pio run
+        run: platformio run -d SecureOTA
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          files: .pio/build/esp32-c6-devkitm-1-man8/firmware.bin
+          files: SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/firmware.bin
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
