@@ -4,3 +4,5 @@
 !.github/workflows/
 !.github/workflows/release.yml
 !platformio.ini
+!boards
+!boards/esp32-c6-devkitm-1-man8.json
