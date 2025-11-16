@@ -3,4 +3,4 @@
 !.github/
 !.github/workflows/
 !.github/workflows/release.yml
-!.platformio.ini
+!platformio.ini
