@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

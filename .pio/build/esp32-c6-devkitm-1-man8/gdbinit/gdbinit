@@ -1,0 +1,2 @@
+source D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/gdbinit/symbols
+source D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/gdbinit/connect
