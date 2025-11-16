@@ -15,7 +15,7 @@ jobs:
         run: pip install platformio
 
       - name: Build firmware
-        run: platformio run -d SecureOTA
+        run: platformio run
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
