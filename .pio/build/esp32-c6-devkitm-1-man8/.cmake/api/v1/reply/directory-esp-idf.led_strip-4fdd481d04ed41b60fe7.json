@@ -9,6 +9,6 @@
 	"paths" : 
 	{
 		"build" : "esp-idf/led_strip",
-		"source" : "C:/Users/P2PIR/.platformio/packages/framework-espidf/components/led_strip"
+		"source" : "components/led_strip"
 	}
 }

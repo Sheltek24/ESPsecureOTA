@@ -792,13 +792,6 @@ D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/json/CMak
 D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/json/CMakeFiles/install.dir
 D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/json/CMakeFiles/install/local.dir
 D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/json/CMakeFiles/install/strip.dir
-D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/led_strip/CMakeFiles/__idf_led_strip.dir
-D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/led_strip/CMakeFiles/edit_cache.dir
-D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/led_strip/CMakeFiles/rebuild_cache.dir
-D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/led_strip/CMakeFiles/list_install_components.dir
-D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/led_strip/CMakeFiles/install.dir
-D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/led_strip/CMakeFiles/install/local.dir
-D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/led_strip/CMakeFiles/install/strip.dir
 D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir
 D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/mqtt/CMakeFiles/edit_cache.dir
 D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/mqtt/CMakeFiles/rebuild_cache.dir
@@ -852,6 +845,13 @@ D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/wifi_prov
 D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/wifi_provisioning/CMakeFiles/install.dir
 D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/wifi_provisioning/CMakeFiles/install/local.dir
 D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/wifi_provisioning/CMakeFiles/install/strip.dir
+D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/led_strip/CMakeFiles/__idf_led_strip.dir
+D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/led_strip/CMakeFiles/edit_cache.dir
+D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/led_strip/CMakeFiles/rebuild_cache.dir
+D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/led_strip/CMakeFiles/list_install_components.dir
+D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/led_strip/CMakeFiles/install.dir
+D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/led_strip/CMakeFiles/install/local.dir
+D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/led_strip/CMakeFiles/install/strip.dir
 D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/src/CMakeFiles/__idf_src.dir
 D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/src/CMakeFiles/edit_cache.dir
 D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8/esp-idf/src/CMakeFiles/rebuild_cache.dir

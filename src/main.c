@@ -26,10 +26,10 @@ void setColorRGB(uint8_t r, uint8_t g, uint8_t b);
 esp_err_t _http_event_handler(esp_http_client_event_t *evt);
 
 led_strip_handle_t led_strip;
-#define setRGBcolorDisconnect setColorRGB(20, 20, 0)
+#define setRGBcolorDisconnect setColorRGB(15, 15, 0)
 #define setRGBcolorConnect setColorRGB(0, 0, 20)
-#define setRGBcolorOTAdone setColorRGB(0, 20, 0)
-#define setRGBcolorOTAerror setColorRGB(20, 0, 0)
+#define setRGBcolorOTAdone setColorRGB(0, 15, 0)
+#define setRGBcolorOTAerror setColorRGB(15, 0, 0)
 
 uint32_t blinkTime = 0;
 bool blinkFlag = 0;
@@ -38,9 +38,6 @@ bool updateButtonFlag = 0;
 uint32_t updateButtonTime = 0;
 uint32_t WiFiDelayTime = 0;
 bool IPisOkFlag = 0;
-#define LOCATION_BUF_SIZE 1024
-static char location_buf[LOCATION_BUF_SIZE];
-static bool got_location = false;
 
 void app_main()
 {
@@ -54,13 +51,13 @@ void app_main()
 
     while (1)
     {
-        if (!blinkFlag && esp_log_timestamp() - blinkTime > 80)
+        if (!blinkFlag && esp_log_timestamp() - blinkTime > 500)
         {
             gpio_set_level(blinkPin, 1);
             blinkTime = esp_log_timestamp();
             blinkFlag = 1;
         }
-        else if (blinkFlag && esp_log_timestamp() - blinkTime > 80)
+        else if (blinkFlag && esp_log_timestamp() - blinkTime > 500)
         {
             gpio_set_level(blinkPin, 0);
             blinkTime = esp_log_timestamp();
@@ -126,8 +123,6 @@ void updateOTA()
     {
         updateButtonFlag = 1;
         esp_http_client_config_t http_cfg = {
-            // .url = "https://drive.google.com/uc?export=download&id=1bGXt2xLd75f74No2ifbY8skEfJoN0dy7",
-            // .url = "https://drive.google.com/uc?export=download&id=1-TYUwrtR7Y90hffn3OJ4tKkK33SvqQ2y",
             .url = "https://github.com/Sheltek24/ESPsecureOTA/releases/latest/download/firmware.bin",
             .event_handler = _http_event_handler,
             .crt_bundle_attach = esp_crt_bundle_attach,
@@ -139,32 +134,6 @@ void updateOTA()
         esp_https_ota_config_t ota_cfg = {
             .http_config = &http_cfg,
         };
-
-        // esp_http_client_handle_t client = esp_http_client_init(&http_cfg);
-        // esp_err_t err = esp_http_client_perform(client);
-        // if (err == ESP_OK)
-        // {
-        //     ESP_LOGI("HTTP", "Status = %d, content_length = %d", esp_http_client_get_status_code(client), esp_http_client_get_content_length(client));
-        //     setRGBcolorOTAdone;
-        //     vTaskDelay(pdMS_TO_TICKS(1000));
-        //     led_strip_clear(led_strip);
-        //     if (IPisOkFlag)
-        //         setRGBcolorConnect;
-        //     else
-        //         setRGBcolorDisconnect;
-        // }
-        // else
-        // {
-        //     ESP_LOGE("HTTP", "HTTP failed: %s", esp_err_to_name(err));
-        //     setRGBcolorOTAerror;
-        //     vTaskDelay(pdMS_TO_TICKS(1000));
-        //     led_strip_clear(led_strip);
-        //     if (IPisOkFlag)
-        //         setRGBcolorConnect;
-        //     else
-        //         setRGBcolorDisconnect;
-        // }
-        // esp_http_client_cleanup(client);
 
         esp_err_t ret = esp_https_ota(&ota_cfg);
         if (ret == ESP_OK)
@@ -228,39 +197,6 @@ esp_err_t _http_event_handler(esp_http_client_event_t *evt)
         break;
     case HTTP_EVENT_ON_HEADER:
         ESP_LOGI("HTTP", "ON_HEADER len=%d: %.*s", evt->data_len, evt->data_len, (char *)evt->data);
-        if (evt->data_len > 9)
-        {
-            if ((evt->data_len >= 9) && (strncasecmp((const char *)evt->data, "Location:", 9) == 0))
-            {
-                int copy_len = evt->data_len - 9;
-                const char *p = (const char *)evt->data + 9;
-                while (copy_len > 0 && (*p == ' ' || *p == '\t'))
-                {
-                    p++;
-                    copy_len--;
-                }
-                if (copy_len > 0)
-                {
-                    int to_copy = (copy_len < LOCATION_BUF_SIZE - 1) ? copy_len : LOCATION_BUF_SIZE - 1;
-                    memcpy(location_buf, p, to_copy);
-                    location_buf[to_copy] = '\0';
-                    got_location = true;
-                    ESP_LOGI("HTTP", "Saved Location header: %s", location_buf);
-                }
-            }
-        }
-        break;
-    case HTTP_EVENT_REDIRECT:
-        ESP_LOGI("HTTP", "ON_REDIRECT len=%d: %.*s", evt->data_len, evt->data_len, (char *)evt->data);
-        {
-            int to_copy = evt->data_len;
-            if (to_copy > LOCATION_BUF_SIZE - 1)
-                to_copy = LOCATION_BUF_SIZE - 1;
-            memcpy(location_buf, evt->data, to_copy);
-            location_buf[to_copy] = '\0';
-            got_location = true;
-            ESP_LOGI("HTTP", "Saved redirect Location: %s", location_buf);
-        }
         break;
     case HTTP_EVENT_ON_DATA:
         ESP_LOGI("HTTP", "Data chunk len=%d; free heap=%d", evt->data_len, esp_get_free_heap_size());

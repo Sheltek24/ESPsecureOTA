@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/P2PIR/.platformio/packages/framework-espidf/components/led_strip
+# Install script for directory: D:/VSCodeProjects/SecureOTA/components/led_strip
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

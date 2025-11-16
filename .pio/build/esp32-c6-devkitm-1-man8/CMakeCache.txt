@@ -297,7 +297,7 @@ ENABLE_PROGRAMS:BOOL=
 ENABLE_TESTING:BOOL=
 
 //No help, variable specified on the command line.
-EXTRA_COMPONENT_DIRS:PATH=d:/VSCodeProjects/SecureOTA/src
+EXTRA_COMPONENT_DIRS:PATH=D:/VSCodeProjects/SecureOTA/src
 
 //Generate the auto-generated files as needed
 GEN_FILES:BOOL=
@@ -345,7 +345,7 @@ PYTHON:UNINITIALIZED=C:\Users\P2PIR\.platformio\penv\.espidf-5.5.0\Scripts\pytho
 PYTHON_DEPS_CHECKED:UNINITIALIZED=1
 
 //No help, variable specified on the command line.
-SDKCONFIG:UNINITIALIZED=d:\VSCodeProjects\SecureOTA\sdkconfig.esp32-c6-devkitm-1-man8
+SDKCONFIG:UNINITIALIZED=D:\VSCodeProjects\SecureOTA\sdkconfig.esp32-c6-devkitm-1-man8
 
 //Value Computed by CMake
 SecureOTA_BINARY_DIR:STATIC=D:/VSCodeProjects/SecureOTA/.pio/build/esp32-c6-devkitm-1-man8

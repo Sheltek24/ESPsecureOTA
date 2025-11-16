@@ -219,7 +219,7 @@
 				},
 				{
 					"backtrace" : 10,
-					"define" : "PROJECT_VER=\"1\""
+					"define" : "PROJECT_VER=\"v1.0.6-dirty\""
 				},
 				{
 					"backtrace" : 2,

@@ -1776,21 +1776,6 @@
 					]
 				},
 				{
-					"build" : "esp-idf/led_strip",
-					"jsonFile" : "directory-esp-idf.led_strip-ce970d539385ed0fab66.json",
-					"minimumCMakeVersion" : 
-					{
-						"string" : "3.16"
-					},
-					"parentIndex" : 1,
-					"projectIndex" : 1,
-					"source" : "C:/Users/P2PIR/.platformio/packages/framework-espidf/components/led_strip",
-					"targetIndexes" : 
-					[
-						65
-					]
-				},
-				{
 					"build" : "esp-idf/mqtt",
 					"jsonFile" : "directory-esp-idf.mqtt-172056922db264504435.json",
 					"minimumCMakeVersion" : 
@@ -1896,6 +1881,21 @@
 					"targetIndexes" : 
 					[
 						87
+					]
+				},
+				{
+					"build" : "esp-idf/led_strip",
+					"jsonFile" : "directory-esp-idf.led_strip-4fdd481d04ed41b60fe7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "components/led_strip",
+					"targetIndexes" : 
+					[
+						65
 					]
 				},
 				{
@@ -2216,7 +2216,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "SecureOTA.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SecureOTA.elf-0dd23333e6968e3249d8.json",
+					"jsonFile" : "target-SecureOTA.elf-0418293c97a288ed95a3.json",
 					"name" : "SecureOTA.elf",
 					"projectIndex" : 0
 				},
@@ -2300,7 +2300,7 @@
 				{
 					"directoryIndex" : 17,
 					"id" : "__idf_esp_app_format::@08c2bdce7fd85cdbea06",
-					"jsonFile" : "target-__idf_esp_app_format-7f5e72ee6faeeaff9fec.json",
+					"jsonFile" : "target-__idf_esp_app_format-64efd1b29e5436c14573.json",
 					"name" : "__idf_esp_app_format",
 					"projectIndex" : 1
 				},
@@ -2496,7 +2496,7 @@
 				{
 					"directoryIndex" : 98,
 					"id" : "__idf_esp_https_ota::@55ee5ec07370a5473c2b",
-					"jsonFile" : "target-__idf_esp_https_ota-2e46f1cd6abc20081d7d.json",
+					"jsonFile" : "target-__idf_esp_https_ota-999fb24f229b461462ac.json",
 					"name" : "__idf_esp_https_ota",
 					"projectIndex" : 1
 				},
@@ -2669,9 +2669,9 @@
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 111,
+					"directoryIndex" : 119,
 					"id" : "__idf_led_strip::@aa443316a99fb884b8ed",
-					"jsonFile" : "target-__idf_led_strip-8a334ee9c51d91185609.json",
+					"jsonFile" : "target-__idf_led_strip-c816f054018a45c2bfff.json",
 					"name" : "__idf_led_strip",
 					"projectIndex" : 1
 				},
@@ -2697,7 +2697,7 @@
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 112,
+					"directoryIndex" : 111,
 					"id" : "__idf_mqtt::@c1ab2c6a99226d1f4b56",
 					"jsonFile" : "target-__idf_mqtt-32008b03dd4170669e9f.json",
 					"name" : "__idf_mqtt",
@@ -2718,7 +2718,7 @@
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 113,
+					"directoryIndex" : 112,
 					"id" : "__idf_nvs_sec_provider::@06580cba064af97f59fd",
 					"jsonFile" : "target-__idf_nvs_sec_provider-ff82dea0e78366765a95.json",
 					"name" : "__idf_nvs_sec_provider",
@@ -2753,7 +2753,7 @@
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 115,
+					"directoryIndex" : 114,
 					"id" : "__idf_rt::@c044be52929cb104e3c1",
 					"jsonFile" : "target-__idf_rt-bea1be7e6cc064f0ca94.json",
 					"name" : "__idf_rt",
@@ -2781,7 +2781,7 @@
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 116,
+					"directoryIndex" : 115,
 					"id" : "__idf_spiffs::@df881b71474064c86689",
 					"jsonFile" : "target-__idf_spiffs-96878307729268a0a2e5.json",
 					"name" : "__idf_spiffs",
@@ -2790,7 +2790,7 @@
 				{
 					"directoryIndex" : 120,
 					"id" : "__idf_src::@2478b13de56d3028f688",
-					"jsonFile" : "target-__idf_src-7a14751d40935eb27d91.json",
+					"jsonFile" : "target-__idf_src-8274637403f93681b250.json",
 					"name" : "__idf_src",
 					"projectIndex" : 1
 				},
@@ -2823,7 +2823,7 @@
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 119,
+					"directoryIndex" : 118,
 					"id" : "__idf_wifi_provisioning::@9d7e7ffe1b15746c1098",
 					"jsonFile" : "target-__idf_wifi_provisioning-c6796d4aa2e669aef741.json",
 					"name" : "__idf_wifi_provisioning",
@@ -2839,7 +2839,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "__ldgen_output_sections.ld::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-__ldgen_output_sections.ld-aa354bd704f4b098c06a.json",
+					"jsonFile" : "target-__ldgen_output_sections.ld-cbbbecb74b38ff024fa8.json",
 					"name" : "__ldgen_output_sections.ld",
 					"projectIndex" : 0
 				},
@@ -2986,7 +2986,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "flash::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-flash-db1d768065440b3b6008.json",
+					"jsonFile" : "target-flash-ed425e324fc079928be5.json",
 					"name" : "flash",
 					"projectIndex" : 0
 				},
@@ -3042,7 +3042,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "merge-bin::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-merge-bin-3147d47c6edced7c293c.json",
+					"jsonFile" : "target-merge-bin-b025a1e3cfc30623bcd9.json",
 					"name" : "merge-bin",
 					"projectIndex" : 0
 				},

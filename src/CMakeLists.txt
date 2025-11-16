@@ -6,5 +6,6 @@ file(GLOB MAIN_SRCS
 idf_component_register(
   SRCS ${MAIN_SRCS}
   INCLUDE_DIRS "."
-  REQUIRES freertos driver esp_wifi esp_event nvs_flash log esp_http_client esp_https_ota led_strip
+  REQUIRES freertos driver esp_wifi esp_event nvs_flash log esp_http_client esp_https_ota
+  PRIV_REQUIRES led_strip
 )
