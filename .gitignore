@@ -1,0 +1,5 @@
+*
+!.gitignore
+!.github/
+!.github/workflows/
+!.github/workflows/release.yml
