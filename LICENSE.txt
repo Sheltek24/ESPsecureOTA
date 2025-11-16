@@ -1,0 +1,4 @@
+This firmware is provided for OTA updates only.
+You may download and apply it to your ESP32 device.
+You may not modify, redistribute, or reverse-engineer this firmware.
+© 2025 Илья Сергеевич. All rights reserved.
